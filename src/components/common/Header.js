@@ -1,9 +1,9 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
 const Header = () => {
   return (
     <div className="col-sm-12">
-      <h2 style={{textAlign:'center'}}>Elistic Search Box</h2>
+      <h2 style={{textAlign:'center'}}>Search</h2>
     </div>
   );
 };

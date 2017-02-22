@@ -1,7 +1,7 @@
 /**
  * Created by sandeepkumar on 22/02/17.
  */
-import React, {PropTypes} from 'react';
+import React from 'react';
 
 const ListItem = ({item}) => {
   return (

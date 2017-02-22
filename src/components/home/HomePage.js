@@ -1,11 +1,10 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import Header from '../common/Header';
 import SearchTextBox from '../common/SearchTextBox';
 import {bindActionCreators} from 'redux';
 import * as searchActions from '../../actions/searchActions';
 import ListItem from '../common/ListItem';
-import {browserHistory} from 'react-router';
 
 export class HomePage extends React.Component {
 
