@@ -6,10 +6,10 @@ import React from 'react';
 const ListItem = ({item}) => {
   return (
     <div className="list-group">
-      <a href="#" className="list-group-item">
+      <a href={item._source.url} target="_new" className="list-group-item">
         <div className="col-md-12">
-          <h4 className="list-group-item-heading"> {item._source.name} <span className="badge">Score : {item._score}</span> </h4>
-          <p className="list-group-item-text">{item._source.text}</p>
+          <h4 className="list-group-item-heading"> {item._source.title} <span className="badge">Score : {item._score}</span> </h4>
+          <p className="list-group-item-text">{item._source.content}</p>
         </div>
       </a>
     </div>
