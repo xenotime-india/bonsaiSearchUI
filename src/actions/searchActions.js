@@ -11,7 +11,7 @@ export function search(searchTxt) {
     dispatch(beginAjaxCall());
     return SearchApi.getSearchResult(searchTxt).then(response => response.json()).then(json => {
       console.log(json);
-      dispatch(loadSearchResultSuccess(json.result.hits.hits));
+      dispatch(loadSearchResultSuccess(json.result.hits));
     }).catch(error => {
       throw(error);
     });
